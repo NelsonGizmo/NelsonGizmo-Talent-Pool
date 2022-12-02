@@ -10,7 +10,9 @@
   background-color:  rgb(71, 71, 180); ;
   color: white;
 }
+
 .header{
+  padding-right: 60px;
   width: 1200px;
   height: 72px;
   box-shadow: 0px 3px 4px 0px;
@@ -19,6 +21,28 @@
   align-items: center;
   border: 1px solid;
 }
+
 .headerspn{
-  margin: 0px 30px;
+  margin-left: 20px;
+}
+
+.bodyg{
+  position: absolute;
+  top: 70px;
+  left: 300px;
+}
+
+.bog{
+  border: 3px solid rgb(247, 247, 247);
+  border-radius: 8px;
+  text-align: center;
+}
+
+:hover.bog{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px ;
+}
+
+.ptag{
+  word-spacing: 100px;
 }

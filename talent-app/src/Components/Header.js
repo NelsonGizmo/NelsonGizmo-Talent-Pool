@@ -6,7 +6,7 @@ import Dropdownarrow from "../Dropdownarrow.svg";
 const Header = () => {
   return (
     <div className='header'>
-       <img src={Notification} alt='Notification' width={30} height={20}  /> <span className='headerspn'> <img src={Employer} alt='Employer' width={50} height={50}  /></span> <img src={Dropdownarrow} alt='Dropdownarrow' width={16} height={11}/>
+       <img src={Notification} alt='Notification' width={30} height={20}  /> <span className='headerspn'> <img src={Employer} alt='Employer' width={60} height={60}  /></span>Adelanke Adeleke<br/>Employer <img src={Dropdownarrow} alt='Dropdownarrow' width={10} height={10}/>
     </div>
   )
 }
