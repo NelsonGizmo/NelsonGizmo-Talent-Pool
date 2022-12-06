@@ -14,28 +14,44 @@
 .header{
   padding-right: 60px;
   width: 1200px;
-  height: 72px;
-  box-shadow: 0px 3px 4px 0px;
+  height: 90px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border: 1px solid;
+  text-align: justify;
+}
+:hover.header{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 3px 4px 0px ;
+}
+
+.drop{
+  margin: 0px 15px;
 }
 
 .headerspn{
   margin-left: 20px;
+  display: flex;
 }
 
 .bodyg{
-  position: absolute;
-  top: 70px;
-  left: 300px;
+ position: absolute;
+ top: 115px;
+ left: 240px;
+  display: flex;
+}
+
+.goal{
+  margin: 0px 30px;
+  text-align: center;
 }
 
 .bog{
   border: 3px solid rgb(247, 247, 247);
   border-radius: 8px;
   text-align: center;
+  padding: 13px 5px;
 }
 
 :hover.bog{
@@ -45,4 +61,37 @@
 
 .ptag{
   word-spacing: 100px;
+
 }
+
+.product{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product1{
+  margin: 0px 60px;
+  text-align: center;
+}
+
+.employ{
+  display: flex;
+}
+
+.employee{
+  border: 3px solid rgb(247, 247, 247);
+  border-radius: 8px;
+  padding: 10px 5px;
+  
+}
+
+.textprops{
+  text-align: justify;
+  margin-left: 10px;
+  
+}
+:hover.employee{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px ;
+}
+
