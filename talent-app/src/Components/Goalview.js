@@ -1,69 +1,59 @@
-import React from 'react'
+import React, { Children } from 'react'
 
-const Goalview = ({ bgcolor, progress, height }) => {
+const Goalview = ({ bgcolor, progress }) => {
 
-    const Parentdiv = {
-        height: height,
-        width: '200px',
-        backgroundColor: 'aqua',
-        borderRadius: 40,
-        margin: 50,
-    }
+    //     const Parentdiv = {
+    //         height: '100vh',
+    //         width: '200px',
+    //         backgroundColor: 'aqua',
+    //         borderRadius: 40,
+    //         margin: 50,
+    //     }
 
-    const Childdiv = {
-        height: '100%',
-        width: `${progress(1)}80%`,
-        backgroundColor: bgcolor,
-        borderRadius: 40,
-        textAlign: 'right',
-    }
-    
-    const Childd = {
-        height: '100%',
-        width: `${progress(2)}30%`,
-        backgroundColor: bgcolor,
-        borderRadius: 40,
-        textAlign: 'right',
-    }
-    const Childdv = {
-        height: '100%',
-        width: `${progress(3)}33.3%`,
-        backgroundColor: bgcolor,
-        borderRadius: 40,
-        textAlign: 'right',
-    }
-    const Childiv = {
-        height: '100%',
-        width: `${progress(4)}50%`,
-        backgroundColor: bgcolor,
-        borderRadius: 40,
-        textAlign: 'right',
-    }
-
-    const progresstext = {
-        padding: 10,
-        color: 'black',
-        fontWeight: 900
-    }
+    //     const Childdiv = {
+    //         width: `${progress(1)}80%`,
+    //         backgroundColor: bgcolor,
+    //         borderRadius: 40,
+    //         textAlign: 'right',
+    //     }
 
 
+    //     const progresstext = {
+    //         padding: 10,
+    //         color: 'black',
+    //         fontWeight: 900
+    //     }
+
+
+    //     return (
+
+    //         <div style={Parentdiv}>
+    //             <div style={Childdiv}>
+    //                 <span style={progresstext}>{`${progress(1)}/5`}</span>
+    //             </div>
+    //          </div>   
+    //     )
+    // 
+}
+
+
+
+const Progress_bar = ({ text, value, fraction}) => {
+   
     return (
-        <div style={Parentdiv}>
-            <div style={Childdiv}>
-                <span style={progresstext}>{`${progress(1)}/5`}</span>
+        <div className='progressbar'>
+            <div>
+            <p className='ptext'>{text}</p>
             </div>
-            <div style={Childd}>
-            <span style={progresstext}>{`${progress(2)}/10`}</span>
-                
+            
+            <div className='progress1' >
+            <progress className='progress'  value={value} max="100"></progress>
+            <span>{fraction}</span> 
             </div>
-            <div style={Childdv}>
-                <span style={progresstext}>{`${progress(3)}/3`}</span>
-            </div>
-            <div style={Childiv}>
-                 <span style={progresstext}>{`${progress(4)}/2`}</span>
-            </div>
+            
         </div>
+
     )
 }
 
-export default Goalview ;
+export default Progress_bar;

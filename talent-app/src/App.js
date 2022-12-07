@@ -2,29 +2,34 @@ import './App.css';
 import Bodygpr from './Components/Bodygpr';
 import Header from './Components/Header';
 import Sidemenu from './Components/Sidemenu';
-import Goalview from './Components/Goalview';
+import Progress_bar from './Components/Goalview'
 
 function App() {
   return (
-    <>
+    
       <div className="App">
         <Sidemenu />
         <Header />
-        <Bodygpr />
+        {/* <Bodygpr />
+
+        <div className='Goal'>
+          <h3>Goal Overview</h3>
+          <div className='Goalchild'>          
+          <Progress_bar text={'Designers'} value='80' fraction="4/5" />
+          <Progress_bar text={'Product Manager'} value='30.3' fraction="3/10" />
+          <Progress_bar text={'Mobile Developer'} value='66.6' fraction="2/3" />
+          <Progress_bar text={'Site Reliability Engineer'} value='80' fraction="4/5" />
+          <Progress_bar text={'Frontend Developer'} value='50' fraction="1/2" />
+          <Progress_bar text={'Quality Assurance'} value='80' fraction="4/5" />
+          <Progress_bar text={'Backend Developer'} value='20' fraction="2/5" />
+          </div>
+
+        </div> */}
 
       </div>
 
-      <div>
-      <h3>Goal Overview</h3>
-      <Goalview bgcolor="blue" progress1='4' height={20} />
-      <Goalview bgcolor="blue" progress2='3' height={20} />
-      <Goalview bgcolor="blue" progress3='2' height={20} />
-      <Goalview bgcolor="blue" progress1='4' height={20} />
-      <Goalview bgcolor="blue" progress4='1' height={20} />
-      <Goalview bgcolor="blue" progress1='4' height={20} />
-      <Goalview bgcolor="blue" progress1='2' height={20} />
-      </div>
-    </>
+
+    
 
   );
 }

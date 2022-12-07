@@ -1,10 +1,10 @@
 .App{
-  display: flex;
+  
 }
 
 .sidebar{
   width: 200px;
-  height: 1000px;
+  height: 1090px;
   text-align: center;
   border: 1px solid rgb(71, 71, 180);
   background-color:  rgb(71, 71, 180); ;
@@ -13,13 +13,16 @@
 
 .header{
   padding-right: 60px;
-  width: 1200px;
+  width: 1087px;
   height: 90px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border: 1px solid;
   text-align: justify;
+  position: absolute;
+  top: 0px;
+  left: 200px;
 }
 :hover.header{
   transition: all 0.5s ease-in-out;
@@ -43,7 +46,7 @@
 }
 
 .goal{
-  margin: 0px 30px;
+  margin: 0px 60px;
   text-align: center;
 }
 
@@ -61,16 +64,18 @@
 
 .ptag{
   word-spacing: 100px;
+  
 
 }
 
 .product{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 750px;
 }
 
 .product1{
-  margin: 0px 60px;
+  margin: 0px 80px;
   text-align: center;
 }
 
@@ -88,6 +93,8 @@
 .textprops{
   text-align: justify;
   margin-left: 10px;
+  font-size: 0.80rem;
+  
   
 }
 :hover.employee{
@@ -95,3 +102,39 @@
   box-shadow: 2px 2px 2px 2px ;
 }
 
+.progressbar{
+  display: flex;
+  align-items: center;
+  
+}
+
+.ptext{
+  width: 200px;
+}
+
+.progress{
+  width: 600px;
+}
+.progress1{
+  width: 800px;
+  text-align: right;
+  color: blue;
+}
+.Goal{
+  position: absolute;
+  width: 800px;
+  top: 570px;
+  left: 300px;
+  
+}
+
+.Goalchild{
+  border: 3px solid rgb(247, 247, 247);
+  border-radius: 8px;
+  width: 800px;
+
+}
+:hover.Goalchild{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px 2px ;
+}
