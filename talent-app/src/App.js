@@ -1,8 +1,9 @@
 import './App.css';
-import Bodygpr from './Components/Bodygpr';
+// import Bodygpr from './Components/Bodygpr';
 import Header from './Components/Header';
 import Sidemenu from './Components/Sidemenu';
-import Progress_bar from './Components/Goalview'
+// import Progress_bar from './Components/Goalview'
+import Messages from './Pages/Messages';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="App">
         <Sidemenu />
         <Header />
+        <Messages />
         {/* <Bodygpr />
 
         <div className='Goal'>

@@ -1,10 +1,10 @@
 .App{
-  
+ background-color: rgb(228, 228, 228);
 }
 
 .sidebar{
   width: 200px;
-  height: 1090px;
+  height: 822px;
   text-align: center;
   border: 1px solid rgb(71, 71, 180);
   background-color:  rgb(71, 71, 180); ;
@@ -13,6 +13,7 @@
 
 .header{
   padding-right: 60px;
+  background-color: white;
   width: 1087px;
   height: 90px;
   display: flex;
@@ -137,4 +138,39 @@
 :hover.Goalchild{
   transition: all 0.5s ease-in-out;
   box-shadow: 2px 2px 2px 2px ;
+}
+
+.Adelekechat{
+  position: absolute;
+  bottom: -200px;
+  left: 810px;
+  
+}
+
+.userchat{
+ align-items: center;
+ position: absolute;
+ width: 500px;
+ background-color: rgb(228, 228, 228);
+ 
+}
+
+.pin{
+  margin-left: 185px;
+}
+
+.woman{
+  padding:0px 10px;
+}
+
+.dots{
+  margin: 0px 15px;
+}
+
+.chatbox{
+  border: 1px solid white;
+  background-color: white;
+  align-content: center;
+  margin-bottom: 40px;
+  height: 690px;
 }
